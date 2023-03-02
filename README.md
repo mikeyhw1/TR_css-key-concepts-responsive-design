@@ -1,4 +1,4 @@
-# CSS Key Concepts: Responsive Design
+# CSS Key Concepts: Responsive Design £
 
 Welcome to Feline Flexbox with Cat Cards!
 
