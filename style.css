@@ -6,26 +6,18 @@
     --camel: #d8a47f;
 }
 
-body {
+/* body {
     background-color: var(--light);
-}
-
-h1 {
-    font-size: 2.25rem;
-    /* font-size: 36px; */
-}
-
-p {
-    font-size: 0.75rem;
-    /* font-size: 12px; */
-}
+} */
 
 .card-container {
     display: flex;
     flex-wrap: wrap;
 
-    border: var(--dark);
+    border: var(--coral);
     border-style: solid;
+
+    /* min-width: 700px; */
 }
 
 .card {
@@ -36,14 +28,68 @@ p {
     /* max-width: 250px; */
     padding: 10px;
     margin: 10px;
-    border: var(--camel);
+    border: var(--coral);
     border-style: solid;
 }
 
-/* .body {
-    
-} */
-
 img {
     width: 250px;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-color: var(--light);
+    }
+    h1 {
+        font-size: 2.25rem;
+    }
+    p {
+        font-size: 0.75rem;
+    }
+    img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+    body {
+        background-color: var(--teal);
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    img {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        background-color: var(--camel);
+    }
+    h1 {
+        font-size: 2.8rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    img {
+        display: block;
+    }
+}
+
+/* @media only screen and (orientation: landscape) {
+    body {
+        background-color: red;
+    }
+} */
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark);
+        color: #ffffff;
+    }
 }
